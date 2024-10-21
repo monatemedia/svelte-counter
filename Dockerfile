@@ -1,5 +1,5 @@
 # build stage
-FROM node:lts-apline as build
+FROM node:23-alpine3.19 as build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
